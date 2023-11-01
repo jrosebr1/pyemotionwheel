@@ -1,5 +1,5 @@
 {
-	"name": "root",
+	"name": "Emotion Wheel",
 	"children": [
 		{
 			"name": "Anger",
@@ -77,7 +77,7 @@
 					]
 				},
 				{
-					"name": "Sadness",
+					"name": "Despondent",
 					"children": [
 						{
 							"name": "Depression"
