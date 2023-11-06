@@ -8,7 +8,7 @@ import json
 
 # define the path to the default emotion wheel JSON tree
 base_dir = pathlib.Path(__file__).resolve().parent
-DEFAULT_EMO_WHEEL_PATH = base_dir / "emotion_wheel_tree.json"
+DEFAULT_EMO_WHEEL_PATH = base_dir / "data" / "emotion_wheel_tree.json"
 
 
 class BasicEmotionWheel:

@@ -1,0 +1,11 @@
+# include the README, license, and requirements files
+include README.md
+include LICENSE
+include requirements.txt
+
+# include all data files in a 'data' directory inside the package
+recursive-include pyemotionwheel/data *
+
+# Exclude all bytecode
+global-exclude *.pyc
+global-exclude __pycache__/*
