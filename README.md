@@ -232,5 +232,3 @@ EmotionNode(name='Excited')
 ## License
 
 `pyemotionwheel` is released under the MIT License. This means it is free to use, modify, and distribute, including for commercial use, provided the license and copyright notice are preserved.
-
-**Note**: Always remember to adhere to the MIT License when using or modifying `pyemotionwheel`.
