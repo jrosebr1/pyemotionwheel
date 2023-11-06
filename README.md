@@ -257,7 +257,7 @@ The _"Nervous"_ secondary emotion has two associated tertiary emotions: _"Worrie
 ## Future work
 
 - Create a sunburst-like visualization for the `BasicEmotionWheel` class. Something similar to [plotly's implementation](https://plotly.com/python/sunburst-charts/) would be great, but maybe use matplotlib instead?
-- Implement a `PlutchikEmotionWheel` class, based on the work of [Robert Plutchik](https://en.wikipedia.org/wiki/Robert_Plutchik). @alfonsosemeraro has a [fantastic implementation](https://github.com/alfonsosemeraro/pyplutchik) that can likely be extended for my particular uses.
+- Implement a `PlutchikEmotionWheel` class, based on the work of [Robert Plutchik](https://en.wikipedia.org/wiki/Robert_Plutchik). [@alfonsosemeraro](https://github.com/alfonsosemeraro) has a [fantastic implementation](https://github.com/alfonsosemeraro/pyplutchik) that can likely be extended for my particular uses.
 
 ## License
 
