@@ -97,8 +97,14 @@ class EmotionWheel:
             EmotionNode: The node corresponding to the emotion if found,
                 otherwise, returns None.
         """
-        # search the tree to find the supplied emotion
-        return search.find_by_attr(self.root, name="name", value=emotion)
+        # search the tree to find the supplied emotion, capitalizing the first
+        # letter of the emotion (since emotions in the tree are stored with
+        # the first letter capitalized, and is thus case-sensitive)
+        return search.find_by_attr(
+            self.root,
+            name="name",
+            value=emotion.capitalize()
+        )
 
     def _get_nodes_at_level(self, level):
         """

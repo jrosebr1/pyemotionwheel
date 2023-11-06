@@ -42,39 +42,206 @@ The only dependency is [anytree](https://anytree.readthedocs.io/en/latest/), a s
 
 Here's how to utilize each of the public methods in the `EmotionWheel` class.
 
+### Instantiate the emotion wheel
+
+Instantiate an instance of the emotion wheel, then show the tree structure:
+
+```python
+>>> from pyemotionwheel import EmotionWheel
+>>> wheel = EmotionWheel()
+>>> print(wheel)
+root
+├── Anger
+│   ├── Rage
+│   │   ├── Hate
+│   │   └── Hostile
+│   ├── Exasperated
+│   │   ├── Agitated
+│   │   └── Frustrated
+│   ├── Irritable
+│   │   ├── Annoyed
+│   │   └── Aggravated
+│   ├── Envy
+│   │   ├── Resentful
+│   │   └── Jealous
+│   └── Disgust
+│       ├── Contempt
+│       └── Revolted
+├── Sadness
+│   ├── Suffering
+│   │   ├── Agony
+│   │   └── Hurt
+│   ├── Despondent
+│   │   ├── Depression
+│   │   └── Sorrow
+│   ├── Disappointed
+│   │   ├── Dismayed
+│   │   └── Displeased
+│   ├── Shameful
+│   │   ├── Regretful
+│   │   └── Guilty
+│   ├── Neglected
+│   │   ├── Isolated
+│   │   └── Lonely
+│   └── Despair
+│       ├── Grief
+│       └── Powerless
+├── Surprise
+│   ├── Stunned
+│   │   ├── Shocked
+│   │   └── Dismayed
+│   ├── Confused
+│   │   ├── Disillusioned
+│   │   └── Perplexed
+│   ├── Amazed
+│   │   ├── Astonished
+│   │   └── Awe-struck
+│   ├── Overcome
+│   │   ├── Speechless
+│   │   └── Astounded
+│   └── Moved
+│       ├── Stimulated
+│       └── Touched
+├── Joy
+│   ├── Content
+│   │   ├── Pleased
+│   │   └── Satisfied
+│   ├── Happy
+│   │   ├── Amused
+│   │   └── Delighted
+│   ├── Cheerful
+│   │   ├── Jovial
+│   │   └── Blissful
+│   ├── Proud
+│   │   ├── Triumphant
+│   │   └── Illustrious
+│   ├── Optimistic
+│   │   ├── Eager
+│   │   └── Hopeful
+│   ├── Enthusiastic
+│   │   ├── Excited
+│   │   └── Zeal
+│   ├── Elation
+│   │   ├── Euphoric
+│   │   └── Jubilation
+│   └── Enthralled
+│       ├── Enchanted
+│       └── Rapture
+├── Love
+│   ├── Affectionate
+│   │   ├── Fondness
+│   │   └── Romantic
+│   ├── Longing
+│   │   ├── Sentimental
+│   │   └── Attracted
+│   ├── Desire
+│   │   ├── Passion
+│   │   └── Infatuation
+│   ├── Tenderness
+│   │   ├── Caring
+│   │   └── Compassionate
+│   └── Peaceful
+│       ├── Relieved
+│       └── Satisfied
+└── Fear
+    ├── Sacred
+    │   ├── Frightened
+    │   └── Helpless
+    ├── Terror
+    │   ├── Panic
+    │   └── Hysterical
+    ├── Insecure
+    │   ├── Inferior
+    │   └── Inadequate
+    ├── Nervous
+    │   ├── Worried
+    │   └── Anxious
+    └── Horror
+        ├── Mortified
+        └── Dread
+```
+
 ### All emotions
 
-To get _all_ emotions present in the wheel:
+To get _all_ emotions present in the tree, ignoring any hierachical structure:
 
+```python
+>>> wheel.all_emotions()
+(EmotionNode(name='Anger'),
+ EmotionNode(name='Rage'),
+ EmotionNode(name='Hate'),
+ EmotionNode(name='Hostile'),
+ EmotionNode(name='Exasperated'),
+ EmotionNode(name='Agitated'),
+ EmotionNode(name='Frustrated'),
+ EmotionNode(name='Irritable'),
+ EmotionNode(name='Annoyed'),
 ...
+```
 
 ### Primary emotions
 
+<!-- TODO: Insert image with pointer to primary level -->
+
+IMAGE
+
 Retrieve all primary emotions (i.e., first level of the wheel):
 
-...
+```python
+>>> wheel.primary_emotions()
+(EmotionNode(name='Anger'),
+ EmotionNode(name='Sadness'),
+ EmotionNode(name='Surprise'),
+ EmotionNode(name='Joy'),
+ EmotionNode(name='Love'),
+ EmotionNode(name='Fear'))
+```
 
 ### Secondary emotions
 
+<!-- TODO: Insert image with pointer to primary level -->
+
+IMAGE
+
 Retrieve all secondary eotions (i.e., second level of the wheel):
 
+```python
+>>> wheel.secondary_emotions()
+(EmotionNode(name='Rage'),
+ EmotionNode(name='Exasperated'),
+ EmotionNode(name='Irritable'),
+ EmotionNode(name='Envy'),
+ EmotionNode(name='Disgust'),
+ EmotionNode(name='Suffering'),
 ...
+```
 
 ### Tertiary emotions
 
+<!-- TODO: Insert image with pointer to primary level -->
+
+IMAGE
+
 Retrieve all tertiery emotions (i.e., third and final level of the wheel):
 
+```python
+>>> wheel.tertiary_emotions()
+(EmotionNode(name='Hate'),
+ EmotionNode(name='Hostile'),
+ EmotionNode(name='Agitated'),
+ EmotionNode(name='Frustrated'),
+ EmotionNode(name='Annoyed'),
 ...
+```
 
 ### Find a specific emotion
 
 You can lookup a specific emotion in the wheel by supplying the `name` of the emotion:
 
-...
-
-### Common implementation patterns
-
-...
+```python
+>>> wheel.find_emotion("excited")
+EmotionNode(name='Excited')
+```
 
 ## License
 
