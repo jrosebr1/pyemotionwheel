@@ -8,9 +8,7 @@ IMAGE
 
 The library models an emotion wheel as a hierarchical tree structure, with primary emotions at its core and more nuanced secondary and tertiary emotions branching out:
 
-<!-- TODO: Add emotion wheel image -->
-
-IMAGE
+![Basic emotion wheel](assets/emotion_wheel.png)
 
 This tool can be especially beneficial in therapeutic settings, educational environments, and personal development for enhancing emotional intelligence.
 
@@ -183,10 +181,6 @@ To get _all_ emotions present in the tree, ignoring any hierachical structure:
 
 ### Primary emotions
 
-<!-- TODO: Insert image with pointer to primary level -->
-
-IMAGE
-
 Retrieve all primary emotions (i.e., first level of the wheel):
 
 ```python
@@ -200,10 +194,6 @@ Retrieve all primary emotions (i.e., first level of the wheel):
 ```
 
 ### Secondary emotions
-
-<!-- TODO: Insert image with pointer to primary level -->
-
-IMAGE
 
 Retrieve all secondary eotions (i.e., second level of the wheel):
 
@@ -219,10 +209,6 @@ Retrieve all secondary eotions (i.e., second level of the wheel):
 ```
 
 ### Tertiary emotions
-
-<!-- TODO: Insert image with pointer to primary level -->
-
-IMAGE
 
 Retrieve all tertiery emotions (i.e., third and final level of the wheel):
 
