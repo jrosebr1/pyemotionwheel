@@ -14,6 +14,8 @@ IMAGE
 
 This tool can be especially beneficial in therapeutic settings, educational environments, and personal development for enhancing emotional intelligence.
 
+<!-- TODO: Generate table of contents -->
+
 ## Why does pyemotionwheel exist?
 
 In the realm of psychology, identifying and articulating emotions is an essential step towards understanding and managing them effectively.
@@ -242,6 +244,8 @@ You can lookup a specific emotion in the wheel by supplying the `name` of the em
 >>> wheel.find_emotion("excited")
 EmotionNode(name='Excited')
 ```
+
+<!-- TODO: Section - Project: Building a mini-personal therapist -->
 
 ## License
 
