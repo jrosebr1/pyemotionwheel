@@ -8,7 +8,7 @@ IMAGE
 
 The library models an emotion wheel as a hierarchical tree structure, with primary emotions at its core and more nuanced secondary and tertiary emotions branching out:
 
-<img alt="Basic emotion wheel" src="assets/emotion_wheel.png" style="max-width: 800px;"/>
+![Basic emotion wheel](assets/emotion_wheel.png)
 
 This tool can be especially beneficial in therapeutic settings, educational environments, and personal development for enhancing emotional intelligence.
 
