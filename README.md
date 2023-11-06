@@ -36,7 +36,7 @@ The only dependency is [anytree](https://anytree.readthedocs.io/en/latest/), a s
 
 ## Usage
 
-Here's how to utilize each of the public methods in the `EmotionWheel` class.
+Here's how to utilize each of the public methods in the `EmotionWheel` class, along with a few common use patterns.
 
 ### Instantiate the emotion wheel
 
@@ -226,6 +226,33 @@ You can lookup a specific emotion in the wheel by supplying the `name` of the em
 >>> wheel.find_emotion("excited")
 EmotionNode(name='Excited')
 ```
+
+### Get the path of an EmotionNode back to the root
+
+We can better understand the composition of an emotion by tracing it back to its root:
+
+```python
+>>> compassionate = wheel.find_emotion("Compassionate")
+>>> compassionate.path[::-1]
+(EmotionNode(name='Compassionate'),
+ EmotionNode(name='Tenderness'),
+ EmotionNode(name='Love'),
+ EmotionNode(name='root'))
+```
+
+The tertiary emotion, _"Compassionate"_, consists of _"Tenderness"_ as the secondary emotion, and finally _"Love"_ as the primary emotion.
+
+### Get all children of an EmotionNode
+
+To understand how a parent emotion can be decomposed into its potential child emotions, we can inspect the `children` of a given `EmotionNode`:
+
+```python
+>>> nervous = wheel.find_emotion("Nervous")
+>>> nervous.children
+(EmotionNode(name='Worried'), EmotionNode(name='Anxious'))
+```
+
+The _"Nervous"_ secondary emotion has two associated tertiary emotions: _"Worried"_ and _"Anxious"_.
 
 <!-- TODO: Section - Project: Building a mini-personal therapist -->
 
