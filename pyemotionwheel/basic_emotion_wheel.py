@@ -11,7 +11,7 @@ base_dir = pathlib.Path(__file__).resolve().parent
 DEFAULT_EMO_WHEEL_PATH = base_dir / "emotion_wheel_tree.json"
 
 
-class EmotionWheel:
+class BasicEmotionWheel:
     """
     A class for building an interacting with an Emotion/Feeling Wheel, which
     is a hierarchical representation of emotions organized as a tree structure.
