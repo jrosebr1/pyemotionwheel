@@ -8,15 +8,13 @@ The library models an emotion wheel as a hierarchical tree structure, with prima
 
 This tool can be especially beneficial in therapeutic settings, educational environments, and personal development for enhancing emotional intelligence.
 
-<!-- TODO: Generate table of contents -->
-
 ## Why does pyemotionwheel exist?
 
 In the realm of psychology, identifying and articulating emotions is an essential step towards understanding and managing them effectively.
 
 **My bond with the emotion wheel is also _deeply personal._**
 
-Surviving a near-death car accident at 13 years old, combined with growing up in a broken home, led to my emotions shutting down to cope with the trauma and ensuing family turmoil.
+Surviving a near-fatal car accident at 13 years old, combined with growing up in a broken home, led to my emotions shutting down to cope with the trauma and ensuing family turmoil.
 
 Two decades later, I began to unlock those surpressed emotions.
 
