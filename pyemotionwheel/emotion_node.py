@@ -13,10 +13,6 @@ class EmotionNode(AnyNode):
 
     Attributes:
         name (str): The human-readable name of the emotion.
-
-    Args:
-        **kwargs: Arbitrary keyword arguments passed to the parent class
-            constructor.
     """
 
     # provide a type hint for the name of the node
