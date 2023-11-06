@@ -16,7 +16,7 @@ In the realm of psychology, identifying and articulating emotions is an essentia
 
 **My bond with the emotion wheel is also _deeply personal._**
 
-I grew up in a broken home. Surviving a near-detal car accident at 13 years old, led to an emotional shutdown to cope with the trauma and ensuing family turmoil.
+Surviving a near-death car accident at 13 years old, combined with growing up in a broken home, led to my emotions shutting down to cope with the trauma and ensuing family turmoil.
 
 Two decades later, I began to unlock those surpressed emotions.
 
