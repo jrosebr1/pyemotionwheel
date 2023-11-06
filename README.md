@@ -1,14 +1,10 @@
 # pyemotionwheel
 
-<!-- TODO: Add featured image -->
-
-IMAGE
+![Basic emotion wheel](assets/emotion_wheel.png)
 
 `pyemotionwheel` is a Python library that provides a programmatic interface to an emotion wheel, a simple psychological tool for identifying and articulating emotions.
 
-The library models an emotion wheel as a hierarchical tree structure, with primary emotions at its core and more nuanced secondary and tertiary emotions branching out:
-
-![Basic emotion wheel](assets/emotion_wheel.png)
+The library models an emotion wheel as a hierarchical tree structure, with primary emotions at its core and more nuanced secondary and tertiary emotions branching out.
 
 This tool can be especially beneficial in therapeutic settings, educational environments, and personal development for enhancing emotional intelligence.
 
