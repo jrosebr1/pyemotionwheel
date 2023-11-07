@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='pyemotionwheel',
-    version='0.1.0',
+    version='0.2.0',
     author='Adrian Rosebrock',  # Replace with your name
     author_email='your.email@example.com',  # Replace with your email
     description='Python library providing a programmatic interface to an emotion wheel, a simple psychological tool for identifying and articulating emotions.',
