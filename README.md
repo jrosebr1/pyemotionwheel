@@ -16,11 +16,11 @@ In the realm of psychology, identifying and articulating emotions is an essentia
 
 Surviving a near-fatal car accident at 13 years old, combined with growing up in a broken home, led to my emotions shutting down to cope with the trauma and ensuing family turmoil.
 
-Two decades later, I began to unlock those surpressed emotions.
+Two decades later, I began to unlock those suppressed emotions.
 
 **The emotion wheel, a seemingly simple tool, proved crucial for me to identify and express my feelings, enhancing my emotional literacy.**
 
-As a developer, I felt called to create an open source implementaiton of the emotion wheel that myself and other programmers can utilize in their own projects.
+As a developer, I felt called to create an open source implementation of the emotion wheel that myself and other programmers can utilize in their own projects.
 
 ## Installation
 
@@ -157,7 +157,7 @@ root
 
 ### All emotions
 
-To get _all_ emotions present in the tree, ignoring any hierachical structure:
+To get _all_ emotions present in the tree, ignoring any hierarchical structure:
 
 ```python
 >>> wheel.all_emotions()
@@ -189,7 +189,7 @@ Retrieve all primary emotions (i.e., first level of the wheel):
 
 ### Secondary emotions
 
-Retrieve all secondary eotions (i.e., second level of the wheel):
+Retrieve all secondary emotions (i.e., second level of the wheel):
 
 ```python
 >>> wheel.secondary_emotions()
@@ -204,7 +204,7 @@ Retrieve all secondary eotions (i.e., second level of the wheel):
 
 ### Tertiary emotions
 
-Retrieve all tertiery emotions (i.e., third and final level of the wheel):
+Retrieve all tertiary emotions (i.e., third and final level of the wheel):
 
 ```python
 >>> wheel.tertiary_emotions()
@@ -346,7 +346,6 @@ emotions_list = [str(e) for e in wheel.all_emotions()]
 prompt = identify_emotions_prompt_template.replace(
     "{journal_entry}", journal_entry)
 prompt = prompt.replace("{emotion_list}", ",".join(emotions_list))
-print(prompt)
 ```
 
 Note how the `{emotion_list}` is a call to `wheel.all_emotions()`, which returns _all_ emotions from the emotion wheel.
@@ -497,7 +496,7 @@ If we inspect the `emotion_hierarchies` dictionary, it will look like:
   
 ### Prompting our AI therapist to help us work through our emotions
 
-Given our `emotion_hierarchies`, let's see how oru AI therapist can help us deepen our emotional intelligence.
+Given our `emotion_hierarchies`, let's see how our AI therapist can help us deepen our emotional intelligence.
 
 To start, let's create an emotional intelligence prompt:
 
@@ -538,7 +537,7 @@ Below I have included the emotion wheel hierarchy for each of the << IDENTIFIED 
 Using your expert knowledge as a psychologist and therapist to help me:
 
 1. Use emotional intelligence to trace my emotions back to the root
-2. Deepen my emotions and move through the children nodes, ideally finding release in the depening
+2. Deepen my emotions and move through the children nodes, ideally finding release in the deepening
 
 Be specific in your advice, and show your thinking step-by-step. Use the tone and style of an empathetic, caring therapist.
 
@@ -626,6 +625,10 @@ Lastly, be patient with yourself. Healing takes time. Allow yourself to move thr
 
 Remember, you're not alone. It's okay to ask for help. You're going through a tough time, but with support, resilience, and self-care, you will get through this.
 ```
+
+Not bad given super basic prompting and ten minutes of work!
+
+Involving an expert psychologist to help rewrite the prompts would likely yield better advice from our AI therapist.
 
 ## Future work
 
